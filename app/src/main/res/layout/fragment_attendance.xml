@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.UpdateAttendanceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendanceProgressBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:id="@+id/attendance_grid"
+        android:layout_gravity="center_horizontal"
+        android:elevation="0dp"
+        android:foregroundGravity="center">
+
+
+    </GridLayout>
+
+
+</RelativeLayout>

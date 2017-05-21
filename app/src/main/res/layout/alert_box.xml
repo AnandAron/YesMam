@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:layout_toRightOf="@+id/imageDialog"
+            android:text="Entry already exist.Continue?"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                >
+
+                <Button
+                    android:id="@+id/alertCancel"
+                    android:layout_width="49dp"
+                    android:layout_height="37dp"
+                    android:text="Cancel"
+                    android:layout_marginTop="12dp"
+                    android:visibility="visible"
+                    android:layout_below="@+id/textDialog"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="1"
+                    android:cursorVisible="false"
+                    android:ellipsize="end"
+                    android:background="@android:color/background_light"
+                    android:theme="@style/MyButton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+
+                    />
+
+                <Button
+                    android:id="@+id/alertOk"
+                    android:layout_width="49dp"
+                    android:layout_height="37dp"
+                    android:text="@android:string/ok"
+                    android:layout_marginTop="12dp"
+                    android:visibility="visible"
+                    android:layout_below="@+id/textDialog"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/background_light"
+                    android:theme="@style/MyButton"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
