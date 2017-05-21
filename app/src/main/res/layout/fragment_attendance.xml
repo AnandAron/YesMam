@@ -2,7 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Fragments.UpdateAttendanceFragment">
+    tools:context="Fragments.UpdateAttendanceFragment"
+    android:id="@+id/base"
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -25,6 +27,19 @@
 
 
     </GridLayout>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:text="Submit"
+
+        android:layout_below="@+id/attendance_grid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:id="@+id/att_submit">
+    </Button>
 
 
 </RelativeLayout>
