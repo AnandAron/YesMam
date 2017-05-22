@@ -6,40 +6,67 @@
     android:id="@+id/base"
     >
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <ProgressBar
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/attendanceProgressBar"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:id="@+id/attendance_grid"
-        android:layout_gravity="center_horizontal"
-        android:elevation="0dp"
-        android:foregroundGravity="center">
-
-
-    </GridLayout>
 
     <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
         android:text="Submit"
 
+        android:id="@+id/att_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp">
+    </Button>
+
+    <ProgressBar
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/attendanceProgressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="140dp" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/attendance_grid"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="18dp"
-        android:layout_marginEnd="18dp"
-        android:id="@+id/att_submit">
-    </Button>
+        android:id="@+id/btn_time" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/att_submit">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:id="@+id/attendance_grid"
+            android:layout_gravity="center_horizontal"
+            android:elevation="0dp"
+            android:foregroundGravity="center">
+
+
+        </GridLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
